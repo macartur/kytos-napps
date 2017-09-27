@@ -13,7 +13,7 @@ from napps.legacy.of_topology import constants
 class Main(KytosNApp):
     """Main class of a KytosNApp, responsible build a network topology.
 
-    This app intends to update the links between machines and switches. It
+    This NApp intends to update the links between machines and switches. It
     considers that if an interface is connected to another interface then this
     is a link. If not, it must be a connection to a server.
     """
@@ -77,9 +77,11 @@ class Main(KytosNApp):
     def get_json_topology(self):
         """Return a json with topology details.
 
-        Method responsible to return a json in /kytos/topology route.
+        Method responsible for returning a json in
+        /api/legacy/of_topology/topology route.
+
         Returns:
-            topology (string): json with topology details.
+            string: json with topology details.
         """
         nodes, links = [], []
         switches = self.controller.switches

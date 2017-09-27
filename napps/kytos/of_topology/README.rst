@@ -34,6 +34,19 @@ If you are going to install kytos-napps from source code, all napps will be
 installed by default (just remember you need to enable the ones you want
 running).
 
+Events
+======
+
+Listen
+------
+kytos/of_core.v0x01.messages.in.ofpt_packet_in
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Listen to any OpenFlow 1.0 PacketIn message.
+
+kytos/of_core.v0x01.messages.in.ofpt_port_status
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Listen to any OpenFlow 1.0 PortStatus message.
+
 REST API
 ========
 

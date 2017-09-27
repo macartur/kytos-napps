@@ -2,10 +2,11 @@ openapi: 3.0.0
 info:
   title: legacy/of_topology
   version: 0.1.1
-  description: "**Warning**: *This documentation is experimental and will change soon.*\n
+  description: "**Warning**: *This documentation is experimental and will
+  change soon.*\n
 
-  Keeps track of links between hosts and switches. Returns a JSON
-  with network topology using the endpoint /legacy/topology."
+  Keeps track of links between hosts and switches and returns a JSON with
+  network topology using the endpoint /api/legacy/of_topology/topology."
 
   tags:
   - name: Current
@@ -15,7 +16,7 @@ info:
 
 paths:
 
-  api/topology/of_topology/topology:
+  api/legacy/of_topology/topology:
     get:
       summary: Return a json with topology details.
       description: Sample description
@@ -23,7 +24,7 @@ paths:
         - Current
       responses:
         200:
-          description: "Method responsible to return a json in /kytos/topology
+          description: "Return a json in api/legacy/of_topology/topology
           route."
           content:
             application/json:
